@@ -26,7 +26,6 @@ class Song
 
   def find_by_name(name)
     self.all.include?(self.new_by_name(name))
-
   end
 
   def save
