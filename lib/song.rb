@@ -55,6 +55,7 @@ class Song
     newSong.artist_name = song[0]
     newSong.name = song[1]
     newSong.save
+    newSong
   end
 
   def save
