@@ -8,7 +8,6 @@ class Song
 
   def self.create
     self.new.save
-    song
   end
 
   def self.new_by_name(name)
