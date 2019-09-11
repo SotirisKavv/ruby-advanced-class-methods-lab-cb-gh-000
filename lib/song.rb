@@ -31,6 +31,7 @@ class Song
         return song
       end
     end
+    return false
   end
 
   def save
