@@ -43,6 +43,13 @@ class Song
     end
   end
 
+  def self.sort
+    self.all.sort do |a, b|
+      a.name <=> b.name
+    end
+    
+  end
+  
   def save
     self.class.all << self
   end
