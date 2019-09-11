@@ -49,6 +49,14 @@ class Song
     end
   end
 
+  def self.new_from_filename(filename)
+    song = filename.split(" - ", ".mp3")
+    newSong = self.new
+    newSong.artist_name = song[0]
+    newSong.name = song[1]
+    newSong.save
+  end
+
   def save
     self.class.all << self
   end
