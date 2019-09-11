@@ -25,7 +25,12 @@ class Song
   end
 
   def self.find_by_name(name)
-    self.all.include?(self.new_by_name(name))
+    toFind = self.new_by_name(name)
+    self.all.each do |song|
+      if toFind.name == song.name
+        return song
+      end
+    end
   end
 
   def save
