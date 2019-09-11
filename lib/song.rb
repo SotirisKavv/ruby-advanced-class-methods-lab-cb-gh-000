@@ -47,9 +47,9 @@ class Song
     self.all.sort do |a, b|
       a.name <=> b.name
     end
-    
+
   end
-  
+
   def save
     self.class.all << self
   end
