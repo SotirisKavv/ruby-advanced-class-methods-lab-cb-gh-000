@@ -53,7 +53,7 @@ class Song
     song = filename.split(" - ")
     newSong = self.new
     newSong.artist_name = song[0]
-    newSong.name = song[1].delete(".mp3")
+    newSong.name = song[1].trim(".mp3", "")
     newSong
   end
 
